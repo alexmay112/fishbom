@@ -9,9 +9,10 @@
   &__main {
     min-height: 800px;
     padding-top: 60px;
-    background: url("../img/header-bg.png") no-repeat;
-    background-position: 50% -66px;
-    background-size: cover;
+    background: url("../img/fade-bg.png") no-repeat 50% 220%,
+      url("../img/header-bg.png") no-repeat 50% -66px;
+    // background-position: 50% -66px;
+    background-size: auto, cover;
 
     .container {
       display: flex;
@@ -142,6 +143,7 @@
   border: 3px solid $green-dark;
   font-size: 18px;
   position: relative;
+  background: white url("../img/form-bg.png");
 
   &::before {
     content: "Акция";
@@ -167,6 +169,9 @@
   &__bottom {
     padding: 15px 20px 11px;
     font-weight: 600;
+    background-color: #fff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     box-shadow: inset 0px 2px 4px 0px rgba(2, 3, 3, 0.15);
   }
 
