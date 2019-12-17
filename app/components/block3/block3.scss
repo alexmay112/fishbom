@@ -1,0 +1,86 @@
+.block3 {
+    background-image: url(../img/bl3-bg.png);
+    background-size: cover;
+    padding: 97px 0 130px 0;
+
+    &__logo {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 17px;
+    }
+
+    &__title {
+        margin-bottom: 50px;
+    }
+
+    .legend {
+        &__desk {
+            margin: 0 auto;
+            max-width: 1081px;
+            width: 100%;
+            height: auto;
+            position: relative;
+
+            p {
+                position: absolute;
+                font-size: 18px;
+                color: rgb(0, 0, 0);
+                line-height: 1.45;
+                width: 36%;
+                left: 9%;
+                top: 11%;
+
+                .br {
+                    display: block;
+                    width: 100%;
+                    margin-bottom: 24px;
+                }
+            }
+
+            &-sign {
+                position: absolute;
+                right: 18%;
+                bottom: 9%;
+            }
+
+        }
+
+        &__mob {
+            display: none;
+        }
+    }
+
+    &__btn {
+        display: block;
+        margin: 42px auto 0 auto;
+        height: 70px;
+        max-width: 335px;
+        font-size: 26px;
+    }
+}
+
+
+@media screen and (max-width:1023px) {
+    .block3 {
+        .legend {
+            &__desk {
+                p {
+                    font-size: 15px;
+                    line-height: 1.2;
+                    width: 38%;
+                    left: 8%;
+                    top: 9%;
+                    br {
+                        display: none;
+                    }
+
+                    .br {
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+
+}
