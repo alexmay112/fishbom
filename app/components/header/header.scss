@@ -5,10 +5,76 @@
       justify-content: space-between;
     }
   }
+
+  &__main {
+    min-height: 800px;
+    padding-top: 60px;
+    background: url("../img/header-bg.png") no-repeat;
+    background-position: 50% -66px;
+    background-size: cover;
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__part {
+    width: calc(100% / 3);
+
+    &_left {
+      width: calc(100% / 3 + 200px);
+    }
+
+    &_center {
+      width: 400px;
+    }
+
+    &_right {}
+
+  }
+
+  &__bottom {}
+
+  .title {
+    margin-top: 25px;
+    margin-bottom: 47px;
+    font-size: 66px;
+    text-align: left;
+    letter-spacing: 2px;
+  }
+
+  &__subtitle {
+    max-width: 470px;
+    margin-bottom: 93px;
+    padding: 23px 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 23px;
+    font-weight: 600;
+    background-color: $green-dark;
+    color: #ffffff;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -20px;
+      left: 20px;
+      border: 10px solid transparent;
+      border-bottom: 10px solid $green-dark;
+      border-left: 10px solid $green-dark;
+    }
+  }
 }
 
 .logo {
+  height: 67px;
   margin: 5px 0;
+
+  span {
+    font-size: 0;
+  }
 }
 
 .features {
@@ -16,23 +82,166 @@
   align-items: center;
 
   &__item {
-    margin-right: 20px;
-    padding: 10px 10px 10px 55px;
+    margin-right: 28px;
+    padding: 10px 41px 10px 55px;
     background-repeat: no-repeat;
     background-position: 0 50%;
+    font-size: 16px;
     border-right: 1px solid rgb(199, 219, 207);
 
     &_first {
+      margin-right: 34px;
+      padding-right: 31px;
+      padding-left: 52px;
       background-image: url("../img/icon-winter.png");
     }
 
     &_second {
+      padding-right: 35px;
       background-image: url("../img/icon-water.png");
     }
 
     &_third {
+      margin-right: 0;
+      padding-right: 10px;
       border-right: none;
       background-image: url("../img/icon-first.png");
     }
   }
+}
+
+.bulits {
+  &__item {
+    margin-bottom: -1px;
+    padding: 27px 5px 27px 90px;
+    font-size: 24px;
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+
+    &_first {
+      background-image: url("../img/bulit1.png");
+    }
+
+    &_second {
+      background-image: url("../img/bulit2.png");
+    }
+
+    &_third {
+      margin-bottom: 0;
+      background-image: url("../img/bulit3.png");
+    }
+  }
+}
+
+.form {
+  max-width: 270px;
+  margin-right: 0;
+  margin-left: auto;
+  text-align: center;
+  border-radius: 10px;
+  border: 3px solid $green-dark;
+  font-size: 18px;
+  position: relative;
+
+  &::before {
+    content: "Акция";
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    right: -30px;
+    top: -20px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-45deg);
+    font-size: 16px;
+    font-weight: 600;
+    background: url("../img/label-action.png") no-repeat;
+  }
+
+  &__top {
+    padding: 16px 20px 0;
+  }
+
+  &__bottom {
+    padding: 15px 20px 11px;
+    font-weight: 600;
+    box-shadow: inset 0px 2px 4px 0px rgba(2, 3, 3, 0.15);
+  }
+
+  &__title {
+    display: block;
+    margin-bottom: 13px;
+    font-size: 32px;
+    font-weight: 900;
+    color: #000000;
+  }
+
+  &__term {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  &__date {
+    display: block;
+  }
+
+  &__input-wrap {
+    margin-bottom: 15px;
+    position: relative;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+    fill: orange;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 19px 10px 19px 50px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid rgb(199, 219, 207);
+  }
+
+  &__note {
+    margin-top: 19px;
+    margin-bottom: 12px;
+    display: block;
+    font-size: 16px;
+  }
+
+  &__free {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #ff0000;
+  }
+
+  &__secure {
+    max-width: 244px;
+    margin-top: 14px;
+    margin-right: 0;
+    margin-left: auto;
+    padding: 10px 0 10px 35px;
+    color: #000000;
+    font-size: 15px;
+    background: url("../img/icon-secure.png") no-repeat;
+    background-position: 0 50%;
+  }
+}
+
+.lastpack {
+  color: #ff0000;
+}
+
+.btn__info {
+  display: block;
+  margin-top: 0;
+  font-size: 18px;
 }

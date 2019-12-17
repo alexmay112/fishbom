@@ -1,7 +1,7 @@
 body {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
-  overflow-x: hidden;
+  // overflow-x: hidden;
   color: #444444;
   background-color: #fff;
   // background: url(../img/1bg.svg) center repeat-y;
@@ -15,7 +15,7 @@ body {
 
 html,
 body {
-  overflow-x: hidden;
+  // overflow-x: hidden;
 }
 
 img {
@@ -67,7 +67,7 @@ svg {
   line-height: 50px;
   color: #222222;
   text-align: center;
-  
+
   @include r(1239) {
     font-size: 42px;
     line-height: 1.1;
@@ -137,7 +137,7 @@ a:hover {
 .btn {
   width: 100%;
   height: 60px;
-  max-width: 220px;
+  max-width: 225px;
   font-family: "Roboto", sans-serif;
   line-height: 1;
   border-radius: 10px;
@@ -145,8 +145,8 @@ a:hover {
   cursor: pointer;
   box-shadow: 0px 5px 0px 0px #e5b41b;
   color: #000000;
-  font-size: 18px;
-  font-weight: 700;
+  font-size: 26px;
+  font-weight: 900;
   transition: 0.2s;
 
   &__text {
@@ -171,31 +171,31 @@ a:hover {
 }
 
 ::-webkit-input-placeholder {
-  color: #444444;
-  font-family: "Open Sans";
+  color: #666666;
+  font-family: "Roboto", sans-serif;
   font-size: 15px;
   font-weight: 400;
 }
 
 ::-moz-placeholder {
-  color: #444444;
-  font-family: "Open Sans";
+  color: #666666;
+  font-family: "Roboto", sans-serif;
   font-size: 15px;
   font-weight: 400;
   opacity: 1;
 }
 
 ::-ms-input-placeholder {
-  color: #666 !important;
-  font-family: "Open Sans" !important;
-  font-size: 15px !important;
+  color: #666666 !important;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px !important;
   font-weight: 400 !important;
 }
 
 ::placeholder {
-  color: #444444;
-  font-family: "Open Sans";
-  font-size: 15px;
+  color: #666666;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
   font-weight: 400;
   opacity: 1;
 }
