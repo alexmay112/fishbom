@@ -1,0 +1,38 @@
+.header {
+  &__top {
+    .container {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+.logo {
+  margin: 5px 0;
+}
+
+.features {
+  display: flex;
+  align-items: center;
+
+  &__item {
+    margin-right: 20px;
+    padding: 10px 10px 10px 55px;
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    border-right: 1px solid rgb(199, 219, 207);
+
+    &_first {
+      background-image: url("../img/icon-winter.png");
+    }
+
+    &_second {
+      background-image: url("../img/icon-water.png");
+    }
+
+    &_third {
+      border-right: none;
+      background-image: url("../img/icon-first.png");
+    }
+  }
+}
