@@ -30,6 +30,10 @@
 
         li {
             margin-bottom: 25px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
         }
 
         &--num {
@@ -74,28 +78,30 @@
         position: relative;
         z-index: 3;
         display: flex;
+        align-items: center;
+        justify-content: space-between;
         width: 100%;
         border-radius: 10px;
         background-color: rgb(255, 255, 255);
         box-shadow: 0px 9px 20px 0px rgba(9, 121, 136, 0.13);
-        margin-top: 20px;
+        margin-top: 45px;
         padding: 31px 60px;
 
         p {
-                font-size: 26px;
-                font-weight: bold;
-                line-height: 1.308;
-                color: black;
+            font-size: 26px;
+            font-weight: bold;
+            line-height: 1.308;
+            color: black;
         }
     }
 
     &__btn {
-        height: 65px;
-    max-width: 322px;
-    font-size: 26px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+        height: 70px;
+        max-width: 322px;
+        font-size: 26px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
 }
@@ -178,4 +184,248 @@
 
 .video-wrap iframe {
     border: none;
+}
+
+@media screen and (max-width: 1499px) and (min-width: 1240px) {
+    .video {
+        .container {
+            max-width: 950px;
+        }
+    }
+}
+
+@media screen and (max-width: 1499px)  {
+.video {
+
+        &__bottom {
+            justify-content: center;
+
+            p {
+                font-size: 24px;
+                margin-right: 50px;
+            }
+        }
+
+        &__top {
+            align-items: center;
+        }
+
+
+        &__bullets {
+            &--text {
+                font-size: 17px;
+            }
+        }
+    }
+
+    .frame {
+        height: 300px !important;
+    }
+
+    .youtube {
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 1239px) and (min-width: 1024px) {
+    .video {
+        .container {
+            max-width: 850px;
+        }
+
+        .title {
+            margin-bottom: 45px;
+        }
+
+        &__bottom {
+            padding: 20px 40px;
+
+            p {
+                font-size: 21px;
+                margin-right: 0;
+            }
+        }
+
+        &__hook {
+            right: -85px;
+            top: 275px;
+        }
+
+        &__fish {
+            width: 170px;
+            height: 159px;
+            left: -103px;
+            top: 146px;
+        }
+
+        &__bullets {
+            &--num {
+                font-size: 24px;
+
+                .number {
+                    font-size: 21px;
+                }
+            }
+        }
+
+    }
+
+    .frame {
+        height: 280px !important;
+    }
+
+    .youtube {
+        height: 280px;
+    }
+}
+
+
+@media screen and (max-width: 1023px) {
+    .video {
+        .title {
+            margin-bottom: 30px;
+        }
+
+        &__top {
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .youtube {
+                order: 2;
+            }
+
+            .frame {
+                order: 2;
+            }
+        }
+
+        &__hook {
+            display: none;
+        }
+
+        &__bullets {
+            width: 450px;
+            margin-bottom: 30px;
+            margin-left: 0;
+
+            &--text {
+                font-size: 19px;
+                text-align: center;
+            }
+
+            &--num {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+
+                .number {
+                    margin-right: 0;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+        &__bottom {
+            margin-top: 30px;
+            padding: 20px 30px;
+
+            p {
+                width: 388px;
+                font-size: 20px;
+                line-height: 1.2;
+                margin-right: 0;
+            }
+        }
+
+        &__btn {
+            width: 300px;
+        }
+
+        &__fish {
+            left: 58px;
+            top: 600px;
+            width: 150px;
+        }
+    }
+
+    .frame {
+        height: 280px !important;
+        width: 450px !important;
+    }
+
+    .youtube {
+        height: 280px;
+        width: 450px;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .video {
+        &__fish {
+            left: -6px;
+
+        }
+
+        &__bottom {
+            flex-wrap: wrap;
+            padding: 20px 40px;
+
+            p {
+                width: 100%;
+                text-align: center;
+                margin-bottom: 15px;
+            }
+        }
+
+        &__btn {
+            margin-left: auto;
+            margin-right: auto;
+            height: 65px;
+            max-width: 270px;
+            font-size: 23px;
+        }
+    }
+}
+
+@media screen and (max-width: 639px) {
+    .video {
+    &__fish {
+            display: none;
+        }
+}
+}
+
+@media screen and (max-width: 479px) {
+    .video {
+        &__bullets {
+            &--num {
+                font-size: 22px;
+           .number {
+            font-size: 22px;
+           }
+        }
+
+        &--text {
+            font-size: 17px;
+        }
+    }
+
+    &__bottom {
+        padding: 15px 0;
+        p {
+            padding: 0 30px;
+        }
+    }
+}
+
+.frame {
+    height: 205px !important;
+    width: 360px !important;
+}
+
+.youtube {
+    height: 205px;
+    width: 360px;
+}
 }

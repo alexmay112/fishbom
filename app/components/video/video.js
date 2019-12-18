@@ -15,7 +15,8 @@ function youtubeShowVideo() {
             a.setAttribute("class", "frame");
             a.style.width = this.style.width;
             a.style.height = this.style.height;
-            this.parentNode.replaceChild(a, this)
+            this.parentNode.replaceChild(a, this);
+            // document.querySelector(".video__fish").style.display = "none";
     }
 }
 youtubeShowVideo();
