@@ -59,17 +59,42 @@
     }
 }
 
+@media screen and (max-width:1239px) {
+    .block3 {
+        .legend {
+            &__desk {
+                &-sign {
+                    right: 16%;
+                }
+
+                p {
+                    line-height: 1.3;
+
+                    .br {
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
 
 @media screen and (max-width:1023px) {
     .block3 {
         .legend {
             &__desk {
+                &-sign {
+                    width: 230px;
+                    height: 92px;
+                }
+
                 p {
                     font-size: 15px;
                     line-height: 1.2;
                     width: 38%;
                     left: 8%;
                     top: 9%;
+
                     br {
                         display: none;
                     }
@@ -84,3 +109,110 @@
 
 
 }
+
+@media screen and (max-width:767px) {
+    .block3 {
+
+        &__logo {
+            margin-bottom: 10px;
+            img {
+                width: 140px;
+                height: 51px;
+            }
+        }
+
+        &__title {
+            margin-bottom: 30px;
+        }
+
+        .legend {
+            &__desk {
+                display: none;
+            }
+
+            &__mob {
+                display: block;
+                &-cont {
+                    
+                max-width: 302px;
+                margin: 0 auto;
+                width: 100%;
+                position: relative;
+                }
+                
+
+                &-sign {
+                    position: absolute;
+                    right: 19%;
+                    bottom: 34%;
+                    width: 205px;
+                    height: 82px;
+                }
+
+                p {
+                    position: absolute;
+                    text-align: center;
+                    font-size: 16px;
+                    color: rgb(0, 0, 0);
+                    line-height: 1.62;
+                    width: 80%;
+                    left: 10%;
+                    bottom: 7%;
+
+
+                }
+
+                &-text {
+                        font-size: 16px;
+                        color: rgb(26, 26, 26);
+                        line-height: 1.625;
+                        text-align: center;
+                        margin-top: 20px;
+                }
+
+                &-green {
+                    font-size: 18px;
+                    color: rgb(255, 255, 255);
+                    font-weight: bold;
+                    line-height: 1.444;
+                    text-align: center;
+                    border-radius: 5px;
+                    background-color: rgb(38, 71, 50);
+                    padding: 25px 20px;   
+                    margin-top: 20px; 
+                  }
+                  
+            }
+        }
+
+        &__btn {
+            margin: 20px auto 0 auto;
+            height: 60px;
+            max-width: 270px;
+            font-size: 23px;
+        }
+    }
+}
+
+@media screen and (max-width:479px) {
+    .block3 {
+        background-image: none;
+        &__title {
+            margin-bottom: 20px;
+        }
+
+        .legend {
+          
+            &__mob {
+                max-width: 302px;
+                margin: 0 auto;
+
+                &-text {
+                    width: 280px;
+                }
+            }
+        }
+    }
+}
+                    
+                
