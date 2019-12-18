@@ -1,0 +1,181 @@
+.video {
+    background-image: url(../img/blue-bg.png), linear-gradient(to bottom, rgba(225, 245, 255, 1) 0%, rgba(218, 235, 250, 1) 100%);
+    background-size: cover;
+    padding: 98px 0;
+
+    .container {
+        position: relative;
+    }
+
+    &__hook {
+        position: absolute;
+        right: -118px;
+        top: 189px;
+        z-index: 2;
+    }
+
+    .title {
+        margin-bottom: 50px;
+    }
+
+    &__top {
+        display: flex;
+        position: relative;
+        z-index: 3;
+    }
+
+    &__bullets {
+        width: 515px;
+        margin-left: 32px;
+
+        li {
+            margin-bottom: 25px;
+        }
+
+        &--num {
+            font-size: 26px;
+            color: rgb(34, 34, 34);
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+
+            .number {
+                font-size: 26px;
+                font-weight: bold;
+                color: rgb(255, 255, 255);
+                border-radius: 50%;
+                background-color: rgb(239, 113, 10);
+                width: 40px;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 18px;
+
+            }
+        }
+
+        &--text {
+            font-size: 20px;
+            color: rgb(68, 68, 68);
+            line-height: 1.4;
+
+        }
+    }
+
+    &__fish {
+        position: absolute;
+        left: -154px;
+        top: 100px;
+    }
+
+    &__bottom {
+        position: relative;
+        z-index: 3;
+        display: flex;
+        width: 100%;
+        border-radius: 10px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 9px 20px 0px rgba(9, 121, 136, 0.13);
+        margin-top: 20px;
+        padding: 31px 60px;
+
+        p {
+                font-size: 26px;
+                font-weight: bold;
+                line-height: 1.308;
+                color: black;
+        }
+    }
+
+    &__btn {
+        height: 65px;
+    max-width: 322px;
+    font-size: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+}
+
+.frame {
+    width: 570px !important;
+    height: 395px !important;
+}
+
+.youtube {
+    background-color: #000;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    cursor: hand;
+    cursor: pointer;
+    box-shadow: 0px 9px 20px 0px rgba(9, 121, 136, 0.13);
+    width: 570px;
+    height: 395px;
+    border-radius: 10px;
+
+
+    .thumb {
+        bottom: 0;
+        display: block;
+        left: 0;
+        margin: auto;
+        max-width: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: auto
+    }
+
+    .play {
+        opacity: 1;
+        height: 79px;
+        left: 50%;
+        margin-left: -105px;
+        margin-top: -46px;
+        position: absolute;
+        top: 50%;
+        width: 210px;
+        background: url("../img/play.png");
+        background-size: 79px 79px;
+        background-repeat: no-repeat;
+        background-position: left top;
+        position: relative;
+        transition: .3s;
+
+        &:hover {
+            opacity: 0.8;
+        }
+
+        &:after {
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 79px;
+            width: 115px;
+            display: flex;
+            align-items: center;
+            content: 'Смотреть видео';
+            font-size: 22px;
+            font-family: "PTSerif", serif;
+            color: rgb(255, 255, 255);
+            font-weight: 700;
+            font-style: italic;
+            line-height: 1.2;
+        }
+    }
+}
+
+.video__name {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.video-wrap iframe {
+    border: none;
+}
