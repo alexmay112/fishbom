@@ -59,7 +59,6 @@ svg {
   }
 }
 
-
 .title {
   font-size: 50px;
   font-weight: 900;
@@ -87,6 +86,23 @@ svg {
 
   @include r(479) {
     font-size: 26px;
+  }
+}
+
+.title_top {
+  margin-top: 94px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 184px;
+    height: 67px;
+    top: -94px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url("../img/logo-main.png") no-repeat;
+    background-size: contain;
   }
 }
 
@@ -171,8 +187,8 @@ a:hover {
       position: absolute;
       left: 0;
       top: 0;
-      box-shadow: 0px 3px 5px 0px rgba(229,180,27,0.5);
-    } 
+      box-shadow: 0px 3px 5px 0px rgba(229, 180, 27, 0.5);
+    }
   }
 
 }
