@@ -103,6 +103,10 @@ svg {
     transform: translateX(-50%);
     background: url("../img/logo-main.png") no-repeat;
     background-size: contain;
+
+    @include r(767) {
+      top: -84px;
+    }
   }
 }
 
