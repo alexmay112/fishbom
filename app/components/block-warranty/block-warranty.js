@@ -8,7 +8,6 @@ $(document).ready(function () {
     autoplaySpeed: 0,
     speed: 10000,
     cssEase: 'linear',
-    // pauseOnFocus: false,
     draggable: false,
     focusOnSelect: true,
     responsive: [{
