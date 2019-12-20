@@ -150,7 +150,7 @@
     position: absolute;
     width: 565px;
     left: -216px;
-    bottom: -245px;
+    bottom: -155px;
 
     @include r(1239) {
       width: 415px;
@@ -178,6 +178,7 @@
     @include r(479) {
       width: 290px;
       height: auto;
+      margin-bottom: 30px;
     }
 
     &::before {

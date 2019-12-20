@@ -1,5 +1,5 @@
 .block-last .header {
-  min-height: 1000px;
+  min-height: 920px;
   padding-bottom: 0px;
   background:
     url("../img/fade-bg.png") no-repeat 50% 130% / auto,
@@ -156,7 +156,7 @@
     position: absolute;
     width: 565px;
     left: -216px;
-    bottom: -245px;
+    bottom: -155px;
 
     @include r(1239) {
       width: 415px;
