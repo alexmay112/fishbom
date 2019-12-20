@@ -1,8 +1,8 @@
 .block-last .header {
-  min-height: 935px;
+  min-height: 1000px;
   padding-bottom: 0px;
   background:
-    url("../img/fade-bg.png") no-repeat 50% 150% / auto,
+    url("../img/fade-bg.png") no-repeat 50% 130% / auto,
     url("../img/header-bg.png") no-repeat 50% -30px / 2480px;
   overflow-x: hidden;
 
@@ -16,7 +16,7 @@
   @include r(1023) {
     min-height: auto;
     background:
-      url("../img/fade-bg.png") no-repeat 50% 100% / 100%,
+      url("../img/fade-bg.png") no-repeat 50% 133% / 100%,
       url("../img/header-bg.png") no-repeat 50% -15px / 1780px;
   }
 
@@ -57,23 +57,23 @@
   &__main {
     min-height: 850px;
     padding-top: 100px;
-    // overflow: hidden;
 
     @include r(1239) {
       min-height: 770px;
     }
 
     @include r(1023) {
-      min-height: 610px;
+      // min-height: 580px;
+      min-height: auto;
       padding: 0;
     }
 
     @include r(767) {
-      min-height: 1100px;
+      min-height: 995px;
     }
 
     @include r(639) {
-      margin-bottom: 20px;
+      margin-bottom: 0px;
     }
 
     .container {
@@ -126,7 +126,7 @@
       @include r(767) {
         position: absolute;
         left: calc(50% + -210px);
-        bottom: -630px;
+        bottom: -540px;
       }
 
       @include r(639) {
@@ -250,6 +250,7 @@
     @include r(1239) {}
 
     @include r(1023) {
+      display: none;
       left: -180px;
       bottom: -65px;
       font-size: 19px;
