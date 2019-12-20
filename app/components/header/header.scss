@@ -73,6 +73,7 @@
     .container {
       display: flex;
       justify-content: space-between;
+      position: relative;
 
       @include r(639) {
         flex-direction: column;
@@ -120,7 +121,7 @@
       @include r(767) {
         position: absolute;
         left: calc(50% + -210px);
-        bottom: -200px;
+        bottom: -620px;
       }
 
       @include r(639) {
@@ -155,7 +156,7 @@
     @include r(1239) {
       width: 415px;
       left: -166px;
-      bottom: -225px;
+      bottom: -155px;
     }
 
     @include r(1023) {
