@@ -2,46 +2,44 @@
   min-height: 935px;
   padding-bottom: 0px;
   background:
-    url("../img/fade-bg.png") no-repeat 50% 70% / auto,
-    url("../img/header-bg.png") no-repeat 50% -71px / 2480px;
+    url("../img/fade-bg.png") no-repeat 50% 150% / auto,
+    url("../img/header-bg.png") no-repeat 50% -30px / 2480px;
   overflow-x: hidden;
 
   @include r(1239) {
+    min-height: 850px;
     background:
       url("../img/fade-bg.png") no-repeat 50% 41% / auto,
-      url("../img/header-bg.png") no-repeat 50% 0px / 1780px;
+      url("../img/header-bg.png") no-repeat 50% 0px / 1910px;
   }
 
   @include r(1023) {
+    min-height: auto;
     background:
-      url("../img/fade-bg.png") no-repeat 50% 69% / auto,
+      url("../img/fade-bg.png") no-repeat 50% 100% / 100%,
       url("../img/header-bg.png") no-repeat 50% -15px / 1780px;
   }
 
   @include r(767) {
     background:
-      url("../img/fade-bg.png") no-repeat 50% 22% / auto,
+      url("../img/fade-bg.png") no-repeat 50% 50% / 100%,
       url("../img/header-bg.png") no-repeat 50% -15px / 1780px;
   }
 
   @include r(639) {
     background:
-      url("../img/fade-bg.png") no-repeat 50% 9% / auto,
+      url("../img/fade-bg.png") no-repeat 50% 14% / auto,
       url("../img/header-bg.png") no-repeat 50% -26px/1350px;
   }
 
   @include r(479) {
     background:
-      url("../img/fade-bg.png") no-repeat 50% 12% / auto,
+      url("../img/fade-bg.png") no-repeat 50% 28% / auto,
       url("../img/header-bg.png") no-repeat 50% -26px/1630px;
   }
 
-  @include r(1239) {
-    min-height: 850px;
-  }
-
-  @include r(1023) {
-    min-height: auto;
+  .container {
+    position: relative;
   }
 
   &-top {
@@ -71,7 +69,7 @@
     }
 
     @include r(767) {
-      min-height: 540px;
+      min-height: 1100px;
     }
 
     @include r(639) {
@@ -128,7 +126,7 @@
       @include r(767) {
         position: absolute;
         left: calc(50% + -210px);
-        bottom: -200px;
+        bottom: -630px;
       }
 
       @include r(639) {
