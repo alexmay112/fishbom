@@ -1,0 +1,73 @@
+.fake {
+  padding: 100px 0 60px;
+  background: #dff1ff url("../img/blue-bg.png") no-repeat;
+  background-size: cover;
+
+  .title {
+    margin-bottom: 54px;
+
+    @include r(1023) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+
+    @include r(1239) {
+      align-items: center;
+    }
+
+    @include r(639) {
+      flex-direction: column;
+    }
+  }
+
+  &__text {
+    padding-top: 8px;
+    max-width: 700px;
+    font-size: 18px;
+    line-height: 26px;
+
+    @include r(1023) {
+      max-width: 460px;
+      padding-top: 0;
+    }
+  }
+
+  &__dat {
+    margin: 28px 0 23px;
+    padding: 18px 26px;
+    font-size: 20px;
+    color: #ffffff;
+    border-radius: 10px;
+    background-color: $green-dark;
+  }
+
+  &__sms {
+    padding: 18px 26px;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.07);
+  }
+
+  &__img {
+    position: relative;
+    left: -20px;
+
+    @include r(1239) {
+      top: 20px;
+    }
+  }
+}
+
+.attention-color {
+  color: #ff0000;
+}
+
+.first-check {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+}

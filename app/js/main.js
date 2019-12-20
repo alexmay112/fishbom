@@ -1,2 +1,2 @@
-//=include ../components/topbar/topbar.js
 //=include ../components/video/video.js
+// =include ../components/block-warranty/block-warranty.js

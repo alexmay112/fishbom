@@ -1,0 +1,70 @@
+.header-scroll {
+  width: 100%;
+  padding: 25px 0;
+  background-color: $green-dark;
+  position: fixed;
+  top: 0;
+  z-index: 60;
+  color: #ffffff;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__img {
+    width: 105px;
+    position: relative;
+
+    img {
+      width: 105px;
+      max-width: none;
+      height: 80px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__free {
+    color: $orange;
+    font-weight: 600;
+  }
+
+  &__date {
+    font-size: 16px;
+  }
+
+  &__div {
+    color: #8a9b90;
+  }
+
+  .btn {
+    width: auto;
+    max-width: none;
+    height: auto;
+    padding: 10px 20px;
+    display: flex;
+    text-align: center;
+    font-size: 20px;
+  }
+}
+
+.timer {
+  display: flex;
+  align-items: center;
+
+  &__title {
+    margin-right: 10px;
+    font-size: 14px;
+  }
+}
+
+.dig {
+  padding: 3px 10.6px;
+  border-radius: 2px;
+  background-color: $orange;
+  font-size: 24px;
+  font-weight: 600;
+}

@@ -1,0 +1,145 @@
+.warranty {
+  padding: 100px 0 0;
+  overflow-x: hidden;
+
+  @include r(1023) {
+    padding-bottom: 0 !important;
+  }
+
+  .title {
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    padding: 10px 20px;
+    line-height: normal;
+    color: #ffffff;
+    background-color: $orange;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    @include r(767) {
+      max-width: 450px;
+      margin-top: 84px;
+    }
+  }
+
+  &__content {
+    margin-top: 5px;
+  }
+}
+
+.warranty-content {
+  padding: 58px 0 80px;
+  color: #ffffff;
+  background: url("../img/warranty-bg.png") no-repeat;
+  background-size: cover;
+
+  &__title {
+    &.title {
+      margin-bottom: 38px;
+      color: #ffffff;
+      background-color: transparent;
+
+      @include r(767) {
+        margin-top: 0;
+        margin-bottom: 30px;
+        padding: 0;
+      }
+    }
+  }
+}
+
+.photo-slider {
+  &__item {
+    max-width: 270px;
+    width: 270px;
+    margin: 0 2.5px;
+  }
+}
+
+.problems {
+  display: flex;
+  justify-content: space-between;
+
+  @include r(639) {
+    flex-wrap: wrap;
+  }
+
+  @include r(479) {
+    justify-content: center;
+  }
+
+  &__item {
+    width: 270px;
+    text-align: center;
+
+    &:nth-child(odd) {
+      padding-top: 30px;
+
+      @include r(639) {
+        padding: 0;
+      }
+    }
+
+    &:nth-child(3) {
+      @include r(639) {
+        margin-bottom: 0;
+      }
+
+      @include r(479) {
+        margin-bottom: 20px;
+      }
+    }
+
+    &:nth-child(4) {
+      @include r(639) {
+        margin-bottom: 0;
+      }
+
+      @include r(479) {
+        margin-bottom: 0;
+      }
+    }
+
+    @include r(1239) {
+      width: 230px;
+    }
+
+    @include r(1023) {
+      width: 170px;
+    }
+
+    @include r(767) {
+      width: 145px;
+    }
+
+    @include r(639) {
+      width: 200px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__img {
+    margin-bottom: 27px;
+
+    @include r(639) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__text {
+    padding: 0 10px;
+    font-size: 20px;
+    line-height: 24px;
+
+    @include r(1023) {
+      font-size: 19px;
+      line-height: 22px;
+    }
+
+    @include r(767) {
+      font-size: 16px;
+    }
+  }
+}
