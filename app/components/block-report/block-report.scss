@@ -1,13 +1,12 @@
 .report {
   padding: 90px 0;
 
-  // background-color: #000000;
   .container {
     position: relative;
   }
 
   .title {
-    margin-bottom: 70px;
+    margin-bottom: 50px;
   }
 }
 
@@ -15,16 +14,23 @@
   &__item {
     display: flex;
     justify-content: center;
-    // transform: scale(0.5);
+    @include r(767) {
+      flex-direction: column;
+    }
   }
 
   &__left {
+    min-width: 195px;
     padding: 23px;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
     border-right: 2px solid #c4c3ae;
     background-color: #d8d6c1;
     position: relative;
+    @include r(767) {
+      display: flex;
+      flex-direction: row;
+    }
 
     &::before {
       content: "";
@@ -46,6 +52,12 @@
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
     background-color: #ced6bf;
+    @include r(1023) {
+      max-width: 420px;
+    }
+    @include r(767) {
+      max-width: none;
+    }
   }
 
   &__top {
@@ -91,7 +103,6 @@
   &__photo-wrap {
     padding: 13px 11px 15px;
     display: flex;
-    // flex-wrap: wrap;
     justify-content: space-around;
     position: relative;
     border: 1px solid #b2b3b3;
@@ -109,17 +120,107 @@
   }
 }
 
-.slick-initialized .slick-slide {
-  display: flex !important;
-  justify-content: center;
+.arrows-wrap {
+  width: 1220px;
+  height: 1px;
+  background-color: #000000;
+  position: absolute;
+  top: calc(50% + 20px) ;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  @include r(1239) {
+    width: 1023px;
+  }
+  @include r(1023) {
+    width: 767px;
+  }
+  @include r(767) {
+    width: 640px;
+  }
 }
 
-.slick-dots li {
-  margin-right: 34px;
-  border-radius: 10px;
-  background-color: #c0ddf0;
-  position: relative;
+.arrows__button {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 100px;
+  box-shadow: 0px 9px 20px 0px rgba(9, 121, 136, 0.13);
   transition: all .2s;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $orange;
+    box-shadow: 0px 9px 20px 0px rgba(9, 121, 136, 0.13);
+
+    .arrow-left,
+    .arrow-right {
+      fill: white;
+    }
+  }
+
+  &_left {
+    position: absolute;
+    left: 0;
+  }
+
+  &_right {
+    position: absolute;
+    right: 0;
+  }
+}
+.swiper-box {
+  max-width: 1033px;
+  margin: 0 auto;
+  @include r(1239) {
+    width: 870px;
+  }
+  @include r(1023) {
+    width: 600px;
+  }
+  @include r(767) {
+    width: 480px;
+  }
+}
+
+.swiper-container {
+  margin-bottom: 70px;
+}
+
+.arrow-left,
+.arrow-right {
+  width: 24px;
+  height: 24px;
+  fill: $green-dark;
+}
+
+.arrow-right {
+  transform: scale(-1);
+}
+
+
+.swiper-button-prev,
+.swiper-button-next {
+  background-image: none;
+}
+
+.swiper-pagination {
+  width: 480px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -56px;
+}
+
+.swiper-pagination-bullet {
+  width: 16px;
+  height: 16px;
+  margin-right: 35px;
+  background-color: #c0ddf0;
+  opacity: 1;
+  position: relative;
 
   &:hover {
     background-color: $orange;
@@ -138,80 +239,15 @@
   }
 
   &:last-child {
-    margin-right: 0;
+    margin-right: 0px;
 
     &::before {
       display: none;
     }
   }
-
-  &.slick-active {
-    background-color: $orange;
-    box-shadow: 0px 0px 2px 4px rgba(251, 173, 109, 1);
-    position: relative;
-  }
 }
 
-.slick-slider .slick-list {
-  margin-bottom: 60px;
-}
-
-.slick-dots {
-  bottom: -38px;
-}
-
-.arrows-wrap {
-  width: 1170px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.arrows__button {
-  width: 70px;
-  height: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  background-color: #fff;
-  border-radius: 100px;
-  box-shadow: 0px 9px 20px 0px rgba(9, 121, 136, 0.13);
-  transition: all .2s;
-
-  &:hover {
-    cursor: pointer;
-    background-color: $orange;
-
-    .arrow-left,
-    .arrow-right {
-      fill: white;
-    }
-  }
-
-  &_left {
-    position: absolute;
-  }
-
-  &_right {
-    position: absolute;
-    right: 0;
-  }
-}
-
-.arrow-left,
-.arrow-right {
-  width: 24px;
-  height: 24px;
-  fill: $green-dark;
-}
-
-.arrow-right {
-  transform: scale(-1);
-}
-
-.swiper-button-prev,
-.swiper-button-next {
-  background-image: none;
+.swiper-pagination-bullet-active {
+  background-color: $orange;
+  box-shadow: 0px 0px 2px 4px rgba(251, 173, 109, 1);
 }
