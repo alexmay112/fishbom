@@ -1,6 +1,11 @@
 .report {
   padding: 90px 0;
 
+  // background-color: #000000;
+  .container {
+    position: relative;
+  }
+
   .title {
     margin-bottom: 70px;
   }
@@ -9,6 +14,7 @@
 .r-slider {
   &__item {
     display: flex;
+    // transform: scale(0.5);
   }
 
   &__left {
@@ -99,4 +105,106 @@
     color: #555555;
     background-color: #ced6bf;
   }
+}
+
+.slick-initialized .slick-slide {
+  display: flex !important;
+  justify-content: center;
+}
+
+.slick-dots li {
+  margin-right: 34px;
+  border-radius: 10px;
+  background-color: #c0ddf0;
+  position: relative;
+  transition: all .2s;
+
+  &:hover {
+    background-color: $orange;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 2px;
+    right: -50px;
+    background-color: #c0ddf0;
+    z-index: -1;
+  }
+
+  &:last-child {
+    margin-right: 0;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  &.slick-active {
+    background-color: $orange;
+    box-shadow: 0px 0px 2px 4px rgba(251, 173, 109, 1);
+    position: relative;
+  }
+}
+
+.slick-slider .slick-list {
+  margin-bottom: 60px;
+}
+
+.slick-dots {
+  bottom: -38px;
+}
+
+.arrows-wrap {
+  width: 1250px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.arrows__button {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 100px;
+  box-shadow: 0px 9px 20px 0px rgba(9, 121, 136, 0.13);
+  transition: all .2s;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $orange;
+
+    .arrow-left,
+    .arrow-right {
+      fill: white;
+    }
+  }
+
+  &_left {
+    position: absolute;
+  }
+
+  &_right {
+    position: absolute;
+    right: 0;
+  }
+}
+
+.arrow-left,
+.arrow-right {
+  width: 24px;
+  height: 24px;
+  fill: $green-dark;
+}
+
+.arrow-right {
+  transform: scale(-1);
 }
