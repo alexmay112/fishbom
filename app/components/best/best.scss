@@ -69,18 +69,10 @@
 @media screen and (max-width: 767px) {
     .best {
         &__item {
-            width: 51%;
-        }
-    }
-
-}
-
-@media screen and (max-width: 767px) {
-    .best {
-        &__item {
             width: 100%;
             max-width: 320px;
         }
+
     }
 
 }
