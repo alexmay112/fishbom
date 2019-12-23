@@ -1,5 +1,9 @@
 .report {
   padding: 90px 0;
+
+  .title {
+    margin-bottom: 70px;
+  }
 }
 
 .r-slider {
@@ -8,42 +12,91 @@
   }
 
   &__left {
-    padding: 20px;
+    padding: 23px;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
-    border-right: 2px solid #bebca7;
+    border-right: 2px solid #c4c3ae;
     background-color: #d8d6c1;
     position: relative;
 
     &::before {
       content: "";
       position: absolute;
-      width: 20px;
-      height: 20px;
-      border-left: 2px solid #bebca7;
-      border-bottom: 2px solid #bebca7;
+      width: 15px;
+      height: 15px;
+      border-left: 2px solid #c4c3ae;
+      border-bottom: 2px solid #c4c3ae;
       background-color: #ced6bf;
-      top: 30px;
-      right: -11px;
+      top: 43px;
+      right: -9px;
       transform: rotate(45deg);
     }
   }
 
   &__right {
-    padding: 20px;
+    max-width: 578px;
+    padding: 25px 20px;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
     background-color: #ced6bf;
   }
 
+  &__top {
+    margin-bottom: 17px;
+    padding-bottom: 17px;
+    font-size: 15px;
+    color: #555555;
+    border-bottom: 1px solid #c4c3ae;
+  }
+
+  &__ava {
+    margin-bottom: 15px;
+  }
+
+  &__name {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  &__parameter {
+    margin-bottom: 9px;
+    font-size: 15px;
+    color: #555555;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__value {
+    color: #222222;
+  }
+
+  &__message {
+    margin-bottom: 19px;
+    font-size: 18px;
+    color: #222222;
+    line-height: 23px;
+  }
+
   &__photo-wrap {
-    padding: 10px;
+    padding: 13px 11px 15px;
     display: flex;
+    justify-content: space-around;
     position: relative;
+    border: 1px solid #b2b3b3;
   }
 
   &__legend {
     position: absolute;
+    width: 104px;
     top: -10px;
+    left: 11px;
+    text-align: center;
+    font-size: 15px;
+    color: #555555;
+    background-color: #ced6bf;
   }
 }
