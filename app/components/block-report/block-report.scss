@@ -7,16 +7,23 @@
 
   .title {
     margin-bottom: 50px;
+
+    @include r(1023) {
+      margin-bottom: 30px;
+    }
   }
 }
 
 .r-slider {
+
   &__item {
     display: flex;
     justify-content: center;
+
     @include r(767) {
       flex-direction: column;
     }
+
   }
 
   &__left {
@@ -27,9 +34,21 @@
     border-right: 2px solid #c4c3ae;
     background-color: #d8d6c1;
     position: relative;
+
     @include r(767) {
       display: flex;
       flex-direction: row;
+      border-bottom-left-radius: 0;
+      border-top-right-radius: 10px;
+      border-right: none;
+      border-bottom: 2px solid #c4c3ae;
+    }
+
+    @include r(479) {
+      padding: 10px;
+      padding-bottom: 23px;
+      flex-direction: column;
+      align-items: center;
     }
 
     &::before {
@@ -43,6 +62,18 @@
       top: 43px;
       right: -9px;
       transform: rotate(45deg);
+
+      @include r(767) {
+        top: auto;
+        right: auto;
+        left: 84px;
+        bottom: -10px;
+        transform: rotate(135deg);
+      }
+
+      @include r(639) {
+        left: 149px;
+      }
     }
   }
 
@@ -52,11 +83,16 @@
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
     background-color: #ced6bf;
+
     @include r(1023) {
       max-width: 420px;
     }
+
     @include r(767) {
       max-width: none;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 10px;
+
     }
   }
 
@@ -70,6 +106,10 @@
 
   &__ava {
     margin-bottom: 15px;
+
+    @include r(767) {
+      margin-bottom: 0;
+    }
   }
 
   &__name {
@@ -77,6 +117,23 @@
     font-size: 20px;
     font-weight: 600;
     text-align: center;
+
+    @include r(767) {
+      text-align: left;
+    }
+  }
+
+  &__profile {
+    @include r(767) {
+      margin-left: 20px;
+    }
+
+    @include r(639) {}
+
+    @include r(479) {
+      margin-left: 0;
+      margin-top: 10px;
+    }
   }
 
   &__parameter {
@@ -91,6 +148,10 @@
 
   &__value {
     color: #222222;
+
+    @include r(479) {
+      // display: block;
+    }
   }
 
   &__message {
@@ -122,20 +183,34 @@
 
 .arrows-wrap {
   width: 1220px;
-  height: 1px;
-  background-color: #000000;
+  // height: 1px;
+  // background-color: #000000;
   position: absolute;
-  top: calc(50% + 20px) ;
+  top: calc(50% + 20px);
   left: 50%;
   transform: translate(-50%, -50%);
+
   @include r(1239) {
     width: 1023px;
   }
+
   @include r(1023) {
     width: 767px;
   }
+
   @include r(767) {
     width: 640px;
+  }
+
+  @include r(639) {
+    width: 480px;
+    top: 302px;
+    z-index: 1;
+  }
+
+  @include r(479) {
+    width: 300px;
+    top: 215px;
   }
 }
 
@@ -150,6 +225,11 @@
   border-radius: 100px;
   box-shadow: 0px 9px 20px 0px rgba(9, 121, 136, 0.13);
   transition: all .2s;
+
+  @include r(639) {
+    width: 40px;
+    height: 40px;
+  }
 
   &:hover {
     cursor: pointer;
@@ -172,17 +252,25 @@
     right: 0;
   }
 }
+
 .swiper-box {
   max-width: 1033px;
   margin: 0 auto;
+
   @include r(1239) {
     width: 870px;
   }
+
   @include r(1023) {
     width: 600px;
   }
+
   @include r(767) {
-    width: 480px;
+    width: 460px;
+  }
+
+  @include r(479) {
+    width: 300px;
   }
 }
 
@@ -212,6 +300,10 @@
   left: 50%;
   transform: translateX(-50%);
   bottom: -56px;
+
+  @include r(639) {
+    width: 300px;
+  }
 }
 
 .swiper-pagination-bullet {
@@ -221,6 +313,14 @@
   background-color: #c0ddf0;
   opacity: 1;
   position: relative;
+
+  @include r(639) {
+    margin-right: 25px;
+  }
+
+  @include r(479) {
+    margin-right: 15px;
+  }
 
   &:hover {
     background-color: $orange;
@@ -236,6 +336,15 @@
     right: -50px;
     background-color: #c0ddf0;
     z-index: -1;
+
+    @include r(639) {
+      right: -40px;
+    }
+
+    @include r(479) {
+      width: 40px;
+      right: -30px;
+    }
   }
 
   &:last-child {
@@ -250,4 +359,26 @@
 .swiper-pagination-bullet-active {
   background-color: $orange;
   box-shadow: 0px 0px 2px 4px rgba(251, 173, 109, 1);
+}
+
+.swiper-slide-active {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    height: 371px;
+    width: 773px;
+    border-radius: 10px;
+    box-shadow: 0px 9px 20px 0px rgba(9, 121, 136, 0.13);
+
+    @include r(1239) {
+      height: 325px;
+    }
+
+    @include r(1023) {
+      display: none;
+      height: 323px;
+    }
+  }
 }
