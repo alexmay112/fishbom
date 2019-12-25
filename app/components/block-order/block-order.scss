@@ -1,15 +1,15 @@
 .order {
   padding: 90px 0;
   background:
-    url("../img/fade-bg.png") no-repeat 50% 0%,
-    url("../img/hook.png") no-repeat 50% 30%;
-  background-size: 1170px;
+    // url("../img/fade-bg.png") no-repeat 50% 0%,
+    url("../img/hook3.png") no-repeat 52% -12px;
+  background-size: 1170px, auto;
   position: relative;
 
   @include r(1023) {
     background:
-      url("../img/fade-bg.png") no-repeat 50% 19%,
-      url("../img/hook.png") no-repeat 50% 60%;
+      // url("../img/fade-bg.png") no-repeat 50% 19%,
+      url("../img/hook3.png") no-repeat 50% 60%;
     background-size: 890px;
   }
 
@@ -57,7 +57,7 @@
     text-align: center;
 
     &:nth-child(2) {
-      margin: 0 60px;
+      margin: 0 64px;
 
       @include r(1023) {
         margin: 0;
