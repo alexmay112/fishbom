@@ -17,6 +17,7 @@
             height: 360px;
             border-bottom-left-radius: 10px;
             border-top-left-radius: 10px;
+            box-shadow: 0px 9px 20px 0px rgba(9, 121, 136, 0.13);
             &--mob {
                 display: none;
             }
@@ -206,3 +207,19 @@
         }
     }
 }
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+
+.block2__content-img {
+    width: auto !important;
+
+}
+  .video__bottom p {
+      max-width: 70%;
+  }
+
+  body {
+      overflow-x: hidden;
+  }
+}
+  
