@@ -32,7 +32,9 @@
 
   .prod_green,
   .prod_orange {
-    display: none;
+    @include r(479) {
+      display: none;
+    }
   }
 }
 
