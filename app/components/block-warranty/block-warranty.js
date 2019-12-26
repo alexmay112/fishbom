@@ -3,13 +3,13 @@ $(document).ready(function () {
     autoplay: true,
     slidesToShow: 7,
     slidesToScroll: 1,
-    speed: 1000,
-    centerMode: true,
+    // speed: 1000,
+    // centerMode: true,
     autoplaySpeed: 0,
-    speed: 10000,
+    speed: 35000,
     cssEase: 'linear',
     draggable: false,
-    focusOnSelect: true,
+    // focusOnSelect: true,
     responsive: [{
         breakpoint: 1024,
         settings: {
