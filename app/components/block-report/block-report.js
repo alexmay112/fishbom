@@ -9,7 +9,7 @@ var sliderSelector = '.swiper-container',
     coverflowEffect: {
       rotate: 0, // Slide rotate in degrees
       stretch: 719, // Stretch space between slides (in px)
-      depth: 425, // Depth offset in px (slides translate in Z axis)
+      depth: 425, // Depth offset in px (slides translate in Z axis) *425
       modifier: 1, // Effect multipler
       slideShadows: false,
     },

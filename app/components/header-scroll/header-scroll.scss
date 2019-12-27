@@ -127,4 +127,8 @@
     text-align: center;
     line-height: 22px;
   }
+
+  @include r(479) {
+    display: inline-block;
+  }
 }
