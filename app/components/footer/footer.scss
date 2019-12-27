@@ -1,20 +1,24 @@
 .footer {
-    margin-top: -70px;
-    padding: 50px 0;
-    font-size: 16px;
-    line-height: 24px;
+  margin-top: -70px;
+  padding: 50px 0;
+  font-size: 16px;
+  line-height: 24px;
 
-    @include r(1239) {
-        margin-top: -20px;
-    }
+  @include r(1239) {
+    margin-top: -20px;
+  }
 
-    @include r(1023) {
-        margin: 0;
-        padding: 30px 0;
-    }
+  @include r(1023) {
+    margin: 0;
+    padding: 30px 0;
+  }
 }
 
 .rom__link {
-    text-decoration: underline;
-    text-decoration-skip-ink: none;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+
+  &:hover {
+    text-decoration: none;
+  }
 }

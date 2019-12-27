@@ -157,6 +157,8 @@
   }
 
   &__message {
+    max-height: 46px;
+    overflow: hidden;
     margin-bottom: 19px;
     font-size: 18px;
     color: #222222;
@@ -422,5 +424,9 @@
 
   &:after {
     display: none;
+  }
+
+  .r-slider__message {
+    max-height: none;
   }
 }
