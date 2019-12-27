@@ -2,7 +2,7 @@
     $.fn.panorama = function (options) {
         this.each(function () {
             var settings = {
-                speed: 40000
+                speed: 50000
             };
             if (options) $.extend(settings, options);
 
