@@ -39,8 +39,9 @@
       transform: translateY(-50%);
 
       @include r(479) {
-        width: 75px;
-        left: 32px;
+        display: none;
+        // width: 75px;
+        // left: 32px;
       }
     }
   }
@@ -62,10 +63,10 @@
     }
 
     @include r(479) {
-      width: 50%;
+      width: 100%;
       margin-bottom: 3px;
       position: relative;
-      left: -20px;
+      // left: -20px;
     }
   }
 
@@ -77,7 +78,7 @@
     width: auto;
     max-width: none;
     height: auto;
-    padding: 10px 20px;
+    padding: 7px 20px 13px;
     display: flex;
     text-align: center;
     font-size: 20px;
@@ -91,7 +92,6 @@
       max-width: none;
     }
   }
-
 }
 
 .timer {
@@ -126,5 +126,9 @@
     display: block;
     text-align: center;
     line-height: 22px;
+  }
+
+  @include r(479) {
+    display: inline-block;
   }
 }

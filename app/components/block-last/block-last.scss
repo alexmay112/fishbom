@@ -6,6 +6,12 @@
     url("../img/header-bg.png") no-repeat 50% -30px / 2480px;
   overflow-x: hidden;
 
+  @include rm(2500) {
+    background:
+      url("../img/fade-bg.png") no-repeat 50% 130% / auto,
+      url("../img/header-bg.png") no-repeat 50% -30px / 2540px;
+  }
+
   @include r(1239) {
     min-height: 850px;
     background:
@@ -63,13 +69,12 @@
     }
 
     @include r(1023) {
-      // min-height: 580px;
       min-height: auto;
       padding: 0;
     }
 
     @include r(767) {
-      min-height: 995px;
+      min-height: 1034px;
     }
 
     @include r(639) {
@@ -90,7 +95,11 @@
     width: calc(100% / 3);
 
     &_left {
-      width: calc(100% / 3 + 200px);
+      width: calc(100% / 3 + 235px);
+
+      @include r(1023) {
+        width: calc(100% / 3 + 195px);
+      }
 
       @include r(767) {
         width: 50%;
@@ -134,7 +143,6 @@
         position: static;
       }
     }
-
   }
 
   &__man-wrap {
@@ -203,8 +211,14 @@
         top: 30px;
       }
 
+      @include r(767) {
+        top: 112px;
+        left: 203px;
+      }
+
       @include r(479) {
-        left: 150px;
+        top: 80px;
+        left: 141px;
       }
     }
   }
@@ -247,8 +261,6 @@
     color: #ffffff;
     background-color: $green-dark;
 
-    @include r(1239) {}
-
     @include r(1023) {
       display: none;
       left: -180px;
@@ -281,8 +293,6 @@
       background: url("../img/icon-kg.png") no-repeat;
     }
   }
-
-  &__bottom {}
 
   .title {
     margin-top: 25px;
@@ -427,6 +437,7 @@
     margin-bottom: -1px;
     padding: 27px 5px 27px 90px;
     font-size: 24px;
+    line-height: 26px;
     background-position: 0 50%;
     background-repeat: no-repeat;
 
@@ -469,7 +480,8 @@
   margin-left: auto;
   text-align: center;
   border-radius: 10px;
-  border: 3px solid $green-dark;
+  // border: 3px solid $green-dark;
+  box-shadow: 0px 0px 0px 3px $green-dark;
   font-size: 18px;
   position: relative;
   background: white url("../img/form-bg.png");
@@ -497,7 +509,8 @@
 
   &__bottom {
     padding: 15px 20px 11px;
-    font-weight: 600;
+    font-weight: 500;
+    line-height: 20px;
     background-color: #fff;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -515,10 +528,13 @@
   &__term {
     display: block;
     margin-bottom: 5px;
+    line-height: 20px;
+    font-weight: 500;
   }
 
   &__date {
     display: block;
+    text-transform: lowercase;
   }
 
   &__input-wrap {
@@ -536,6 +552,7 @@
 
   &__input {
     width: 100%;
+    height: 58px;
     padding: 19px 10px 19px 50px;
     font-size: 16px;
     border-radius: 10px;
@@ -620,8 +637,6 @@
     }
   }
 
-  &__right {}
-
   &__logo {
     margin-top: 17px;
     margin-bottom: 0;
@@ -665,7 +680,6 @@
 }
 
 .sert {
-
   &__item {
     width: 570px;
     padding: 34px;

@@ -8,8 +8,8 @@ var sliderSelector = '.swiper-container',
     effect: 'coverflow', // 'cube', 'fade', 'coverflow',
     coverflowEffect: {
       rotate: 0, // Slide rotate in degrees
-      stretch: 719, // Stretch space between slides (in px) :551
-      depth: 425, // Depth offset in px (slides translate in Z axis) :860
+      stretch: 719, // Stretch space between slides (in px)
+      depth: 425, // Depth offset in px (slides translate in Z axis) *425
       modifier: 1, // Effect multipler
       slideShadows: false,
     },
@@ -26,8 +26,8 @@ var sliderSelector = '.swiper-container',
     breakpoints: {
       1239: {
         coverflowEffect: {
-          stretch: 666, // Stretch space between slides (in px) :551
-          depth: 425, // Depth offset in px (slides translate in Z axis) :860
+          stretch: 686, // Stretch space between slides (in px)
+          depth: 425, // Depth offset in px (slides translate in Z axis)
           modifier: 1, // Effect multipler
           slideShadows: false,
         },
@@ -35,11 +35,6 @@ var sliderSelector = '.swiper-container',
       1023: {
         effect: 'slide'
       },
-      // 767: {
-      //   coverflowEffect: {
-      //     depth: 0, // Depth offset in px (slides translate in Z axis)
-      //   }
-      // }
     },
     // Events
     on: {

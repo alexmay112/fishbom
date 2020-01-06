@@ -27,7 +27,7 @@ var popupBuild = true; // false/true
 //.seconds класс для вывода секунд
 
 if (!window.cdn_path) {
-  (function() {
+  (function () {
     function initiate() {
       var breakpoint = 999,
         desktop = document.querySelector("#cloneThis"),
@@ -145,7 +145,14 @@ if (!window.cdn_path) {
           }
         }
       }
-
+      /* FIX-FIX-FIX */
+      var modalBtn = document.querySelectorAll('.ever-popup-btn');
+      for (var i = 0; i < modalBtn.length; i++) {
+        modalBtn && modalBtn[i].addEventListener('click', function () {
+          modalPosition(window.innerHeight);
+        });
+      }
+      /* FIX-FIX-FIX */
       function checkPosition(selector, container, screenHeight) {
         //позиционирование попапа по вертикали
 
@@ -196,7 +203,7 @@ if (!window.cdn_path) {
       }
 
       var mouseOutCount = 0;
-      document.body.addEventListener("mouseleave", function(event) {
+      document.body.addEventListener("mouseleave", function (event) {
         //событие на увод мышки со страницы. если мышка уходит за верхнюю границу документа, вызывается попап
         var e = event || window.event;
         e = e.clientY;
@@ -275,7 +282,7 @@ if (!window.cdn_path) {
       // при документ реди вызывается функция init, описаная выше
       document.addEventListener("DOMContentLoaded", init);
 
-      window.addEventListener("resize", function() {
+      window.addEventListener("resize", function () {
         //при ресайзе пересчитываем позиционирование модального окна
         modalPosition(window.innerHeight);
       });

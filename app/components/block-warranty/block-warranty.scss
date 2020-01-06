@@ -2,6 +2,10 @@
   padding: 100px 0 0;
   overflow-x: hidden;
 
+  &__panorama {
+    display: inline;
+  }
+
   @include r(1023) {
     padding-bottom: 0 !important;
   }
