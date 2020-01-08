@@ -174,7 +174,7 @@
         }
 
         &__choice {
-            left: -11px;
+            left: 0px;
         }
     }
 }
@@ -194,6 +194,9 @@
             left: -61px;
         }
     }
+    .sub-title {
+        font-size: 22px;
+    }
 }
 
 @media screen and (max-width: 639px) {
@@ -205,7 +208,7 @@
         }
 
         &__choice {
-            left: -52px;
+            left: -45px;
             width: 70px;
         }
 
@@ -219,11 +222,16 @@
 
         &__items {
             justify-content: center;
+            margin-bottom: 0px;
         }
 
         &__item--line:after {
             display: none;
         }
+    }
+
+    .sub-title {
+        margin-bottom: 20px;
     }
 }
 
@@ -244,10 +252,12 @@
         &__choice {
             left: 0;
         }
+
         &__item {
             width: 80%;
         }
     }
+
     .sub-title {
         font-size: 22px;
         margin-bottom: 20px;
