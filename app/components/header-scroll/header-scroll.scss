@@ -19,7 +19,6 @@
 
     @include r(479) {
       flex-wrap: wrap;
-      // flex-direction: column;
     }
   }
 
@@ -53,6 +52,10 @@
   &__free {
     color: $orange;
     font-weight: 600;
+
+    @include r(479) {
+      display: none;
+    }
   }
 
   &__date {
@@ -125,10 +128,14 @@
   @include r(1239) {
     display: block;
     text-align: center;
-    line-height: 22px;
+    line-height: 24px;
   }
 
   @include r(479) {
     display: inline-block;
   }
+}
+
+.date-0 {
+  text-transform: lowercase;
 }

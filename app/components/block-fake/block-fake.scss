@@ -99,6 +99,11 @@
     @include r(1239) {
       top: 20px;
     }
+
+    @include r(767) {
+      top: 17px;
+      left: 0;
+    }
   }
 }
 

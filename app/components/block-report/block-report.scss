@@ -197,7 +197,7 @@
   }
 
   @include r(1239) {
-    width: 1003px;
+    width: 1018px;
   }
 
   @include r(1023) {
@@ -217,6 +217,14 @@
   @include r(479) {
     width: 260px;
     top: 215px;
+  }
+}
+
+@media screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+  .arrows-wrap {
+    width: 950px;
+    z-index: 50;
   }
 }
 
