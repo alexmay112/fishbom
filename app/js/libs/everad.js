@@ -145,14 +145,7 @@ if (!window.cdn_path) {
           }
         }
       }
-      /* FIX-FIX-FIX */
-      var modalBtn = document.querySelectorAll('.ever-popup-btn');
-      for (var i = 0; i < modalBtn.length; i++) {
-        modalBtn && modalBtn[i].addEventListener('click', function () {
-          modalPosition(window.innerHeight);
-        });
-      }
-      /* FIX-FIX-FIX */
+
       function checkPosition(selector, container, screenHeight) {
         //позиционирование попапа по вертикали
 

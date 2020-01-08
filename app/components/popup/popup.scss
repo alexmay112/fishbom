@@ -72,3 +72,24 @@
     right: 0 !important;
   }
 }
+
+.ever-popup.show {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.ever-popup__inner {
+  margin: 0 !important;
+}
+
+@media (max-height: 700px) {
+  .ever-popup.show {
+    display: block !important;
+  }
+
+  .ever-popup__inner {
+    margin: 40px auto !important;
+  }
+
+}

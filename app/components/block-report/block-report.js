@@ -33,7 +33,12 @@ var sliderSelector = '.swiper-container',
         },
       },
       1023: {
-        effect: 'slide'
+        coverflowEffect: {
+          stretch: 0, // Stretch space between slides (in px)
+          depth: 250, // Depth offset in px (slides translate in Z axis)
+          modifier: 1, // Effect multipler
+          slideShadows: false,
+        },
       },
     },
     // Events
@@ -59,16 +64,8 @@ if (user.browser.family == 'IE') {
       slidesPerView: 'auto', // or 'auto'
       autoHeight: true,
       centeredSlides: true,
-      effect: 'fade', // 'cube', 'fade', 'coverflow',
-      coverflowEffect: {
-        rotate: 0, // Slide rotate in degrees
-        stretch: 719, // Stretch space between slides (in px)
-        depth: 425, // Depth offset in px (slides translate in Z axis) *425
-        modifier: 1, // Effect multipler
-        slideShadows: false,
-      },
+      effect: 'slide', // 'cube', 'fade', 'coverflow',
       grabCursor: true,
-      // parallax: true,
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
@@ -87,3 +84,40 @@ if (user.browser.family == 'IE') {
 }
 
 var mySwiper = new Swiper(sliderSelector, options);
+
+// let slider1 = $('.swiper-container');
+
+// function initSlider(slider, options) {
+//   slider.on('init', function () {
+//     setTimeout(function () {
+//       slider.addClass('is-ready');
+//     }, 100);
+//   });
+//   slider.not('.slick-initialized').slick(options);
+// }
+
+
+// function destroySlider(slider) {
+//   if (slider.hasClass('slick-initialized')) {
+//     slider.slick('unslick');
+//   }
+// }
+
+// function showSlider() {
+//   var tablet = ($(window).width()) < 866;
+//   if (tablet) {
+//     initSlider(slider1, {
+//       slidesToShow: 2,
+//       slidesToScroll: 1,
+//       dots: false,
+//       arrows: true,
+//       infinite: true,
+//       adaptiveHeight: true,
+//       variableWidth: true,
+//     });
+//   } else {
+//     destroySlider(slider1);
+//   }
+// };
+// showSlider();
+// $(window).on('resize', showSlider);

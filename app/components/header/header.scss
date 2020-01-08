@@ -6,8 +6,23 @@
     url("../img/header-bg.png") no-repeat 50% -71px / 2480px;
   overflow-x: hidden;
 
+  @include rm(2100) {
+    background:
+      url("../img/hook.png") no-repeat 61% 95% / 1410px,
+      url("../img/fade-bg.png") no-repeat 50% 75% / auto,
+      url("../img/header-bg.png") no-repeat 50% -80px / 2540px;
+  }
+
+  @include rm(2300) {
+    background:
+      url("../img/hook.png") no-repeat 61% 95% / 1460px,
+      url("../img/fade-bg.png") no-repeat 50% 75% / auto,
+      url("../img/header-bg.png") no-repeat 50% -80px / 2540px;
+  }
+
   @include rm(2500) {
     background:
+      url("../img/hook.png") no-repeat 61% 95% / 1480px,
       url("../img/fade-bg.png") no-repeat 50% 75% / auto,
       url("../img/header-bg.png") no-repeat 50% -80px / 2540px;
   }
@@ -351,7 +366,7 @@
     &::before {
       content: "";
       position: absolute;
-      top: -20px;
+      top: -19px;
       left: 20px;
       border: 10px solid transparent;
       border-bottom: 10px solid $green-dark;
