@@ -177,6 +177,10 @@
             left: 0px;
         }
     }
+
+    .sub-title {
+        margin-bottom: 35px;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -232,6 +236,7 @@
     }
 
     .sub-title {
+        max-width: 350px;
         margin-bottom: 20px;
     }
 }

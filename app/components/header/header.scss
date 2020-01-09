@@ -6,6 +6,10 @@
     url("../img/header-bg.png") no-repeat 50% -71px / 2480px;
   overflow-x: hidden;
 
+  @media (min-width: 1280px) and (max-width: 1400px) {
+    background: none;
+  }
+
   @include rm(2100) {
     background:
       url("../img/hook.png") no-repeat 61% 95% / 1410px,
