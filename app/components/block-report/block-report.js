@@ -52,6 +52,7 @@ var sliderSelector = '.swiper-container',
 //Создаем объект 'user', который будет содержать информацию Detect.js
 //Вызываем detect.parse() с navigator.userAgent в качестве аргумента
 var user = detect.parse(navigator.userAgent);
+console.log(navigator.userAgent)
 
 // Выводим нужные значения в консоли браузера
 console.log(user.browser.family)
