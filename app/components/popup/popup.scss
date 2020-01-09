@@ -1,6 +1,6 @@
 .ever-popup__inner {
   width: 770px !important;
-  padding-top: 45px !important;
+  padding-top: 0px !important;
 
   @include r(1023) {
     width: 270px !important;
@@ -65,7 +65,7 @@
 
 .ever-popup__close {
   right: -40px !important;
-  top: 10px !important;
+  top: -35px !important;
 
   @include r(1023) {
     top: 11px !important;
@@ -89,6 +89,6 @@
   }
 
   .ever-popup__inner {
-    margin: 40px auto !important;
+    margin: 50px auto !important;
   }
 }
