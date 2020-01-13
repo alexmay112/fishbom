@@ -164,6 +164,20 @@
             margin-top: 40px;
             width: 100%;
         }
+        &__item {
+            flex-direction: row;
+         
+            p {
+                text-align: left;
+                margin-left: 20px;
+            }
+            br {
+                display: none;
+            }
+        }
+        &__item--line:after {
+display: none;
+        }
     }
 }
 
@@ -175,6 +189,9 @@
 
         &__choice {
             left: 0px;
+        }
+        &__item {
+            width: 49%;
         }
     }
 
@@ -196,6 +213,17 @@
 
         &__choice {
             left: -61px;
+        }
+        &__item {
+         
+       img {
+           width: 75px;
+           height: 75px;
+       }
+       p {
+        font-size: 18px;
+
+       }
         }
     }
 
