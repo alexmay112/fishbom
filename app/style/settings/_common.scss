@@ -93,6 +93,10 @@ svg {
   margin-top: 94px;
   position: relative;
 
+  @include r(1239) {
+    margin-top: 76px;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -103,6 +107,10 @@ svg {
     transform: translateX(-50%);
     background: url("../img/logo-main.png") no-repeat;
     background-size: contain;
+
+    @include r(1239) {
+      top: -75px;
+    }
 
     @include r(767) {
       top: -84px;

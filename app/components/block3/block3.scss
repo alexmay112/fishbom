@@ -61,6 +61,10 @@
 
 @media screen and (max-width:1239px) {
     .block3 {
+        &__logo {
+            margin-bottom: 5px;
+        }
+
         .legend {
             &__desk {
                 &-sign {
@@ -115,6 +119,7 @@
 
         &__logo {
             margin-bottom: 10px;
+
             img {
                 width: 140px;
                 height: 51px;
@@ -132,14 +137,15 @@
 
             &__mob {
                 display: block;
+
                 &-cont {
-                    
-                max-width: 302px;
-                margin: 0 auto;
-                width: 100%;
-                position: relative;
+
+                    max-width: 302px;
+                    margin: 0 auto;
+                    width: 100%;
+                    position: relative;
                 }
-                
+
 
                 &-sign {
                     position: absolute;
@@ -163,11 +169,11 @@
                 }
 
                 &-text {
-                        font-size: 16px;
-                        color: rgb(26, 26, 26);
-                        line-height: 1.625;
-                        text-align: center;
-                        margin-top: 20px;
+                    font-size: 16px;
+                    color: rgb(26, 26, 26);
+                    line-height: 1.625;
+                    text-align: center;
+                    margin-top: 20px;
                 }
 
                 &-green {
@@ -178,10 +184,10 @@
                     text-align: center;
                     border-radius: 5px;
                     background-color: rgb(38, 71, 50);
-                    padding: 25px 20px;   
-                    margin-top: 20px; 
-                  }
-                  
+                    padding: 25px 20px;
+                    margin-top: 20px;
+                }
+
             }
         }
 
@@ -197,12 +203,13 @@
 @media screen and (max-width:479px) {
     .block3 {
         background-image: none;
+
         &__title {
             margin-bottom: 20px;
         }
 
         .legend {
-          
+
             &__mob {
                 max-width: 302px;
                 margin: 0 auto;
@@ -214,5 +221,3 @@
         }
     }
 }
-                    
-                

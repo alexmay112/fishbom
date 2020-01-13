@@ -42,6 +42,7 @@
   &__title {
     &.title {
       margin-bottom: 38px;
+      padding: 0;
       color: #ffffff;
       background-color: transparent;
 
@@ -86,8 +87,21 @@
       }
     }
 
+    &:nth-child(1) {
+      @include r(639) {
+        order: 1;
+      }
+    }
+
+    &:nth-child(2) {
+      @include r(639) {
+        order: 3;
+      }
+    }
+
     &:nth-child(3) {
       @include r(639) {
+        order: 2;
         margin-bottom: 0;
       }
 
@@ -98,6 +112,7 @@
 
     &:nth-child(4) {
       @include r(639) {
+        order: 4;
         margin-bottom: 0;
       }
 
@@ -119,7 +134,7 @@
     }
 
     @include r(639) {
-      width: 200px;
+      width: 205px;
       margin-bottom: 20px;
     }
   }
