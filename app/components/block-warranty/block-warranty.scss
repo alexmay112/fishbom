@@ -160,5 +160,9 @@
     @include r(767) {
       font-size: 16px;
     }
+
+    @include r(639) {
+      padding: 0;
+    }
   }
 }
