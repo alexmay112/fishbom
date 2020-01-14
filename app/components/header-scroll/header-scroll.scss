@@ -8,8 +8,12 @@
   z-index: 60;
   color: #ffffff;
 
-  @include r(479) {
+  @include r(639) {
     padding: 10px 0;
+  }
+
+  @include r(479) {
+    padding: 8px 0;
   }
 
   .container {
@@ -39,7 +43,7 @@
       max-width: none;
       position: absolute;
       top: 50%;
-      transform: translateY(-50%);
+      transform: translateY(-46%);
 
       @include r(479) {
         display: none;

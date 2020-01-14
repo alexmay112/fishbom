@@ -88,7 +88,9 @@
 
     @include r(479) {
       padding-top: 25px;
-      background-color: #fff;
+      padding-bottom: 10px;
+      background:
+        #f2f2f2 url("../img/header-bg.png") no-repeat 50% -26px/1630px;
     }
 
     &::before {
@@ -109,6 +111,7 @@
       @include r(479) {
         height: 120px;
         bottom: 800px;
+        background: linear-gradient(to bottom, #ffffff00 0%, #f2f2f2 100%);
       }
     }
 
