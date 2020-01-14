@@ -13,23 +13,25 @@
   }
 
   @include r(1239) {
-    min-height: 850px;
+    min-height: 810px;
     background:
-      url("../img/fade-bg.png") no-repeat 50% 41% / auto,
-      url("../img/header-bg.png") no-repeat 50% 0px / 1910px;
+      url("../img/fade-bg.png") no-repeat 50% 110% / auto,
+      url("../img/header-bg.png") no-repeat 50% -11px / 1800px;
   }
 
   @include r(1023) {
     min-height: auto;
-    background:
-      url("../img/fade-bg.png") no-repeat 50% 123% / 100%,
-      url("../img/header-bg.png") no-repeat 50% -15px / 1780px;
+    // background:
+    // url("../img/fade-bg.png") no-repeat 50% 123% / 100%,
+    // url("../img/header-bg.png") no-repeat 50% -15px / 1780px;
+    background: url(../img/header-bg.png) no-repeat 50% -80px/1980px;
   }
 
   @include r(767) {
-    background:
-      url("../img/fade-bg.png") no-repeat 50% 50% / 100%,
-      url("../img/header-bg.png") no-repeat 50% -15px / 1780px;
+    // background:
+    //   url("../img/fade-bg.png") no-repeat 50% 50% / 100%,
+    //   url("../img/header-bg.png") no-repeat 50% -15px / 1780px;
+    background: url(../img/header-bg.png) no-repeat 50% -65px/1780px;
   }
 
   @include r(639) {
@@ -63,22 +65,54 @@
   &__main {
     min-height: 850px;
     padding-top: 100px;
+    position: relative;
 
     @include r(1239) {
-      min-height: 860px;
+      // min-height: 860px;
+      min-height: auto;
+      padding-top: 0;
     }
 
     @include r(1023) {
-      min-height: auto;
+      min-height: 545px;
       padding: 0;
     }
 
     @include r(767) {
-      min-height: 1034px;
+      min-height: 1055px;
     }
 
     @include r(639) {
       margin-bottom: 0px;
+    }
+
+    @include r(479) {
+      padding-top: 25px;
+      padding-bottom: 10px;
+      background:
+        #f2f2f2 url("../img/header-bg.png") no-repeat 50% -26px/1630px;
+    }
+
+    &::before {
+      @include r(1023) {
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        height: 10px;
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 99%, rgba(255, 255, 255, 1) 100%);
+      }
+
+      @include r(767) {
+        bottom: 550px;
+        height: 80px;
+      }
+
+      @include r(479) {
+        height: 120px;
+        bottom: 800px;
+        background: linear-gradient(to bottom, #ffffff00 0%, #f2f2f2 100%);
+      }
     }
 
     .container {
@@ -143,7 +177,7 @@
       @include r(767) {
         position: absolute;
         left: calc(50% + -210px);
-        bottom: -540px;
+        bottom: -630px;
       }
 
       @include r(639) {
@@ -181,7 +215,8 @@
     }
 
     @include r(1023) {
-      left: -199px;
+      width: 330px;
+      left: -230px;
       bottom: 30px;
     }
 
@@ -216,7 +251,10 @@
       }
 
       @include r(1023) {
+        width: 75px;
         top: 30px;
+        left: 160px;
+        background-size: contain;
       }
 
       @include r(767) {
@@ -274,23 +312,26 @@
     }
 
     @include r(1023) {
-      display: none;
-      left: -180px;
-      bottom: -65px;
+      // display: none;
+      width: 270px;
+      padding-left: 20px;
+      left: -380px;
+      bottom: 55px;
       font-size: 19px;
     }
 
     @include r(767) {
       width: 265px;
       left: -117px;
+      bottom: -65px;
     }
 
     @include r(639) {
-      width: 247px;
+      // width: 247px;
       margin: 0 auto 30px;
-      padding-left: 40px;
+      // padding-left: 40px;
       position: relative;
-      left: 10px;
+      left: 0px;
       bottom: auto;
     }
 
@@ -303,6 +344,11 @@
       width: 57px;
       height: 57px;
       background: url("../img/icon-kg.png") no-repeat;
+
+      @include r(1023) {
+        left: auto;
+        right: -10px;
+      }
     }
   }
 
@@ -318,6 +364,10 @@
       margin-top: 0;
       margin-bottom: 40px;
       line-height: 47px;
+    }
+
+    @include r(1023) {
+      font-size: 60px;
     }
 
     @include r(639) {
@@ -344,6 +394,7 @@
     }
 
     @include r(1023) {
+      max-width: 270px;
       padding: 14px 10px;
       font-size: 19px;
     }
@@ -458,7 +509,7 @@
     }
 
     @include r(1023) {
-      padding-left: 63px;
+      padding: 10px 5px 10px 63px;
       font-size: 19px;
       background-size: 50px;
     }
@@ -468,6 +519,14 @@
 
       br {
         display: none;
+      }
+    }
+
+    @include r(479) {
+      padding: 10px 5px 10px 60px;
+
+      br {
+        display: block;
       }
     }
 
