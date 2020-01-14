@@ -58,6 +58,11 @@
         &__item {
             max-width: 220px;
         }
+        &__logo {
+            img {
+                margin: 0 auto 5px;
+            }
+        }
 
     }
 
@@ -74,11 +79,7 @@
                 font-size: 20px;
             }
         }
-&__logo {
-    img {
-        margin: 0 auto 5px;
-    }
-}
+
 
     }
 
