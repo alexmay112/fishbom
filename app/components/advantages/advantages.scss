@@ -25,8 +25,8 @@
 
     &__choice {
         position: absolute;
-        top: 5px;
-        left: -76px;
+        top: 102px;
+        left: 87px;
     }
 
     &__items {
@@ -112,9 +112,9 @@
             left: -104px;
         }
 
-        &__choice {
-            left: -45px;
-        }
+        // &__choice {
+        //     left: -45px;
+        // }
     }
 }
 
@@ -156,7 +156,7 @@
         }
 
         &__choice {
-            left: 70px;
+            left: 220px;
         }
 
         &__items {
@@ -191,7 +191,7 @@
         }
 
         &__choice {
-            left: 0px;
+            left: 137px;
         }
 
         &__item {
@@ -220,7 +220,8 @@
         }
 
         &__choice {
-            left: -61px;
+            left: 49px;
+            top: 92px;
         }
 
         &__item {
@@ -252,7 +253,8 @@ margin-bottom: 10px;
         }
 
         &__choice {
-            left: -45px;
+            left: 39px;
+            top: 64px;
             width: 70px;
         }
 
@@ -297,7 +299,8 @@ margin-bottom: 10px;
         }
 
         &__choice {
-            left: 0;
+            left: 175px;
+            top: 24px;
         }
 
         &__items {
