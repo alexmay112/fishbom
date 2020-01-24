@@ -415,7 +415,7 @@
   .title {
     margin-top: 25px;
     margin-bottom: 47px;
-    font-size: 66px;
+    font-size: 65px;
     text-align: left;
     letter-spacing: -0.2px;
     font-family: "TTNorms-ExtraBold", sans-serif;
@@ -428,7 +428,7 @@
     }
 
     @include r(1023) {
-      width: 460px;
+      // width: 460px;
       font-size: 60px;
     }
 

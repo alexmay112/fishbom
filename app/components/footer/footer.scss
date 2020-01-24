@@ -552,4 +552,19 @@
 @include r(1199) {
 	.deliver__images--second {
 		margin-left: 53px;
-	}}
+	}
+}
+@include r(479) {
+	.deliver__confid img {
+		padding-top: 20px;
+	}
+}
+@include r(374) {
+	.deliver__confid img {
+		padding-top: 0px;
+	}
+}
+.rom__center p {
+	line-height: 1.2;
+	margin-top: 5px;
+}

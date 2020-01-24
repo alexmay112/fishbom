@@ -16,6 +16,7 @@
     position: relative;
     display: flex;
     justify-content: space-between;
+
     @include r(1023) {
       padding: 0;
       background: none;
@@ -42,9 +43,9 @@
 
   &__left {
     position: relative;
-  
-   
-  
+
+
+
     &::before {
       position: absolute;
       content: "";
@@ -54,20 +55,32 @@
       top: 90px;
       background: url(../img/medal-choice.png) no-repeat;
       z-index: 5;
+      @include r(1023) {
+        display: none;
+      }
     }
   }
+
   &__prod {
     max-width: 330px;
     position: relative;
-   top: 25px;
-  }
-    &__balls {
-      max-width: 210px;
-      position: absolute;
-      bottom: 20px;
-      right: -120px;
+    top: 25px;
+
+    @include r(1023) {
+      display: none;
     }
-  
+  }
+
+  &__balls {
+    max-width: 210px;
+    position: absolute;
+    bottom: 20px;
+    right: -120px;
+    @include r(1023) {
+      display: none;
+    }
+  }
+
 }
 
 .ever-popup__close:after,
