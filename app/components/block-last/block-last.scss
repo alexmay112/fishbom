@@ -204,9 +204,8 @@
 
   &__prod-wrap {
     position: absolute;
-    width: 565px;
-    left: -216px;
-    bottom: -155px;
+    left: -162px;
+    bottom: -152px;
 
     @include r(1239) {
       width: 415px;
@@ -242,8 +241,8 @@
       position: absolute;
       width: 90px;
       height: 90px;
-      left: 251px;
-            top: 165px;
+      right: 35px;
+      top: 55px;
       background: url("../img/medal-choice.png") no-repeat;
 
       @include r(1239) {

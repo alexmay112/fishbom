@@ -180,6 +180,7 @@
 
       @include r(767) {
         width: 50%;
+
       }
 
       @include r(639) {
@@ -227,32 +228,30 @@
 
   &__prod-wrap {
     position: absolute;
-    width: 565px;
-    left: -216px;
-    bottom: -155px;
+    // width: 565px;
+    left: -154px;
+    bottom: -150px;
 
     @include r(1239) {
-      width: 415px;
-      left: -166px;
+      left: -116px;
       bottom: -155px;
     }
 
     @include r(1023) {
-      width: 330px;
-      left: -230px;
+      left: -202px;
       bottom: 30px;
     }
 
     @include r(767) {
-      width: 435px;
-      left: -90px;
-      bottom: auto;
-      top: 0;
+      position: static;
+      padding-top: 70px;
+      max-width: 240px;
+
     }
 
     @include r(639) {
-      height: 440px;
-      position: static;
+      margin: 0 auto;
+      padding-top: 50px;
     }
 
     @include r(479) {
@@ -266,60 +265,95 @@
       position: absolute;
       width: 90px;
       height: 90px;
-      left: 251px;
-      top: 159px;
+      right: 35px;
+      top: 60px;
       background: url("../img/medal-choice.png") no-repeat;
+      z-index: 5;
 
       @include r(1239) {
-        left: 187px;
-        top: 118px;
         width: 80px;
-    height: 80px;
-    background-size: contain;
+        height: 80px;
+        background-size: contain;
       }
 
       @include r(1023) {
         width: 70px;
         top: 56px;
-        left: 179px;
+
         background-size: contain;
       }
 
       @include r(767) {
         top: 125px;
-        left: 193px;
+        right: 135px;
+      }
+
+      @include r(639) {
+        top: 104px;
+        right: 119px;
       }
 
       @include r(479) {
-        top: 80px;
-        left: 162px;
+        // top: 80px;
+        left: 184px;
       }
     }
   }
 
   &__prod {
-    &_desk {
-      @include r(1023) {
-        display: none;
-      }
+    display: block;
+    position: relative;
+    max-width: 300px;
 
-      @include r(767) {
-        display: block;
-      }
+    @include r(1023) {
+      max-width: 260px;
+
     }
 
-    &_mob {
-      display: none;
+    @include r(767) {
+      top: 10px;
+      left: -35px;
+      max-width: 240px;
+    }
+    @include r(767) {
+      max-width: 200px;
 
-      @include r(1023) {
-        display: block;
-      }
-
-      @include r(767) {
-        display: none;
-      }
     }
   }
+
+  &__balls {
+    position: absolute;
+    bottom: 7px;
+    right: -146px;
+    max-width: 240px;
+
+    @include r(1239) {
+      max-width: 200px;
+    }
+
+    @include r(1023) {
+      display: none;
+    }
+
+    @include r(767) {
+      display: block;
+      bottom: 54px;
+      right: -3px;
+      max-width: 180px;
+    }
+
+    @include r(639) {
+      bottom: 90px;
+      right: 33px;
+
+    }
+    
+    @include r(479) {
+      max-width: 140px;
+      right: 18px;
+    }
+  }
+
 
   &__note {
     width: 314px;
@@ -346,6 +380,7 @@
     }
 
     @include r(767) {
+      position: relative;
       width: 265px;
       left: -130px;
       bottom: -65px;

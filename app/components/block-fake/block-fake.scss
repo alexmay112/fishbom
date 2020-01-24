@@ -114,15 +114,74 @@
 
   &__img {
     position: relative;
-    left: -20px;
+    left: -72px;
 
     @include r(1239) {
       top: 20px;
+      left: 0;
+    }
+
+    @include r(1023) {
+      top: 30px;
+      left: -30px;
     }
 
     @include r(767) {
       top: 17px;
       left: 0;
+    }
+  }
+
+  &__prod {
+    position: relative;
+  }
+
+  &__img {
+    display: block;
+    max-width: 280px;
+
+    @include r(767) {
+      max-width: 170px;
+      left: -30px;
+    }
+    @include r(639) {
+      max-width: 230px;
+
+    }
+  }
+
+  &__code {
+    position: absolute;
+    top: 45px;
+    right: 0;
+
+    @include r(1310) {
+      max-width: 175px;
+      top: 31px;
+      right: 13px;
+    }
+
+    @include r(1239) {
+      max-width: 160px;
+      top: 53px;
+      right: -39px;
+    }
+
+    @include r(1023) {
+      max-width: 150px;
+      top: 60px;
+      right: 0px;
+    }
+
+    @include r(767) {
+      max-width: 100px;
+      top: 40px;
+
+    }
+    @include r(639) {
+      max-width: 140px;
+      right: -16px;
+
     }
   }
 }

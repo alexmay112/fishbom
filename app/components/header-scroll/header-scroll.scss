@@ -31,26 +31,38 @@
   }
 
   &__img {
-    width: 105px;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &__prod {
+    max-width: 65px;
     position: relative;
 
     @include r(479) {
       width: 50%;
     }
+  }
 
-    img {
-      width: 105px;
-      max-width: none;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-46%);
+  &__balls {
+    max-width: 50px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
 
-      @include r(479) {
-        display: none;
-        // width: 75px;
-        // left: 32px;
-      }
-    }
+  &__action {
+    width: 40px;
+    height: 40px;
+    background: url(../img/label-action.png) no-repeat;
+    background-size: contain;
+    flex-shrink: 0;
+    font-size: 11px;
+    font-weight: 700;
+    padding-left: 3px;
+    padding-top: 13px;
+
   }
 
   &__btn-wrap {
@@ -68,7 +80,8 @@
 
   &__date {
     font-size: 16px;
-line-height: 1.1;
+    line-height: 1.1;
+
     @include r(1239) {
       text-align: center;
     }
@@ -146,4 +159,24 @@ line-height: 1.1;
 
 .date-0 {
   text-transform: lowercase;
+}
+
+@include r(1219) {
+  .header-scroll__date {
+    max-width: 155px;
+    br {
+      display: none;
+    }
+  }
+}
+@include r(1023) {
+  .header-scroll__date {
+    max-width: 200px;
+   
+  }
+}
+@include r(479) {
+.header-scroll__img {
+  display: none;
+}
 }
