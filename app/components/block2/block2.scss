@@ -97,7 +97,7 @@
             }
 
             &-pack {
-                left: -112px;
+                left: -78px;
             }
 
             p {
@@ -159,9 +159,9 @@
                 bottom: -49px;
 
                 &--choice {
-                    width: 60px;
-                    height: 60px;
-                    left: 150px;
+                    width: 70px;
+                    height: 70px;
+                    left: 135px;
                     top: 44px;
                 }
                 &--product {
@@ -202,7 +202,10 @@
                     border-bottom-right-radius: 10px;
                 }
             }
-
+            &--choice {
+                width: 60px;
+                height: 60px;
+            }
             &-pack {
                 left: -79px;
                 bottom: -35px;
