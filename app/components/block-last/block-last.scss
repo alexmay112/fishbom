@@ -575,7 +575,10 @@
     background: url("../img/label-action.png") no-repeat;
 
     @include r(1199) {
-      right: -22px;
+      right: -5px;
+      width: 60px;
+      height: 60px;
+      background-size: cover;
       top: -28px;
     }
 

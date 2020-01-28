@@ -147,7 +147,7 @@
     width: calc(100% / 3);
 
     &_left {
-      width: calc(100% / 3 + 235px);
+      width: calc(100% / 3 + 243px);
 
       @include r(1239) {
         width: calc(100% / 3 + 44px);
@@ -414,7 +414,7 @@
 
   .title {
     margin-top: 25px;
-    margin-bottom: 47px;
+    margin-bottom: 46px;
     font-size: 65px;
     text-align: left;
     letter-spacing: -0.2px;

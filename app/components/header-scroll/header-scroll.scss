@@ -1,7 +1,7 @@
 .header-scroll {
   width: 100%;
   display: none;
-  padding: 16px 0;
+  padding: 8px 0;
   background-color: $green-dark;
   position: fixed;
   bottom: 0;
@@ -37,7 +37,7 @@
   }
 
   &__prod {
-    max-width: 65px;
+    max-width: 55px;
     position: relative;
 
     @include r(479) {
@@ -46,10 +46,10 @@
   }
 
   &__balls {
-    max-width: 50px;
+    max-width: 40px;
     position: absolute;
     bottom: 0;
-    right: 0;
+    right: 9px;
   }
 
   &__action {
@@ -163,7 +163,7 @@
 
 @include r(1219) {
   .header-scroll__date {
-    max-width: 155px;
+    max-width: 165px;
     br {
       display: none;
     }
